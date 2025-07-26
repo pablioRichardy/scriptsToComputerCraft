@@ -1,0 +1,8 @@
+services:
+  lua-dev:
+    build: .
+    container_name: lua-dev
+    volumes:
+      - ./src:/usr/src/app
+    working_dir: /usr/src/app
+    tty: true
